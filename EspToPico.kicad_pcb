@@ -4925,8 +4925,8 @@
 		(layer "Edge.Cuts")
 		(uuid "287097a8-bc8c-4416-a3f9-a2002fbe2f0c")
 	)
-	(gr_text "Purdue Hackers\nPico to ESP32 Converter\nRev 2\nDesigned by Jack Hogan"
-		(at 94.6 55.1 270)
+	(gr_text "Purdue Hackers\nPico to ESP32\nRev 2\nDesigned by\nJack Hogan"
+		(at 93.1 55.4 270)
 		(layer "F.SilkS")
 		(uuid "ab1ad153-c6fc-41bd-844c-5e4d3937ece9")
 		(effects

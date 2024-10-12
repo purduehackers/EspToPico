@@ -1,2 +1,7 @@
 # EspToPico
-This is a converter board for an ESP32 to a Pi Pico for the purposes of the Sign Project. The current revision has a bug where the EEPROM MOSI pin is input only, so the EEPROM is not usable. However, the ESP32 has a lot of internal storage, so that can be used instead. The button LED pin was also assigned to an input-only pin, but reversing the switch and LED pins is trivial since they go to terminals so I just did that.
+This is a converter board for an ESP32 to a Pi Pico for the purposes of the Sign Project.
+
+The next revision of the board (3) should fix the following problems:
+- It is impossible to program the board without resorting to using the bodged boot button. The official ESP32 dev board uses the serial chip to reset the ESP32 and put it in boot mode. Schematics are available online. This would be ideal.
+- The button switch and LED lines had to be reversed here since the LED line was sent to an input-only pin. I reversed the labels for rev 2, but now there is a mismatch to the motherboard. This could be fixed later but it doesn't matter very much.
+- The EEPROM MOSI is assigned to an input-only pin, rendering the EEPROM inaccessible. The ESP32 has enough storage to make this a non-issue, but it is still a problem.

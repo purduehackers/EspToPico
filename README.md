@@ -1,0 +1,2 @@
+# EspToPico
+This is a converter board for an ESP32 to a Pi Pico for the purposes of the Sign Project. The current revision has a bug where the EEPROM MOSI pin is input only, so the EEPROM is not usable. However, the ESP32 has a lot of internal storage, so that can be used instead. The button LED pin was also assigned to an input-only pin, but reversing the switch and LED pins is trivial since they go to terminals so I just did that.
